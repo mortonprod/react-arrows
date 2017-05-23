@@ -1,0 +1,25 @@
+@media screen and (orientation:portrait) {
+  .blocks{
+    position:relative;
+    top:10vh;
+    width:99vw;
+    height:99vw;  
+  }
+}
+
+@media screen and (orientation:landscape) {
+  .blocks{
+    position:relative;
+    width:99vh;
+    height:99vh;
+    margin:auto;    
+  }
+}
+
+.blocks .blocks-block {
+  width:33.33%;
+  height:33.33%;
+  display:inline-block;
+}
+
+
