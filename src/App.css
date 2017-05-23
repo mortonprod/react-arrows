@@ -17,9 +17,87 @@
 }
 
 .blocks .blocks-block {
+  position:relative;
   width:33.33%;
   height:33.33%;
   display:inline-block;
 }
 
+.fill{
+  position:absolute;
+  width:100%;
+  height:100%;
+}
+.top > .top-title {
+  text-align: center; 
+  width:100%;
+  height:50%;
+  font-size: 200%;
+  font-family: 'Indie Flower', cursive;
+}
 
+.top > .top-arrow {
+  position:relative;
+  margin:auto;
+  width:50%;
+  height:50%;
+}
+
+img {
+  position:absolute;
+  width:100%;
+  height:100%;
+}
+
+.left > .left-arrow {
+  position:relative;  
+  margin-left:50%;
+  width:50%;
+  height:50%;
+  transform: rotateZ(-120deg);
+}
+.left > .left-title{
+  transform: translateY(-20px);
+  font-size: 200%;
+  font-family: 'Indie Flower', cursive;
+
+}
+
+.right > .right-arrow {
+  position:relative;  
+  margin-right:50%;
+  width:50%;
+  height:50%;
+  transform: rotateZ(120deg);
+}
+.right > .right-title{
+  transform: translateY(-20px);
+  font-size: 200%;
+  font-family: 'Indie Flower', cursive;
+
+}
+
+@keyframes singleBlink {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.blink{
+  animation-name: singleBlink;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.blink_offset{
+  animation-delay: 0.5s;
+}
